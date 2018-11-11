@@ -11,13 +11,13 @@ The following script is called through the target
 '
 
 # ensure the correctness of the argument.
-if [ "$1" != "" ]; then
+if [ "$1" == "" ]; then
     echo "Missing docker image name"
-elif [ "$2" != "" ]; then
+elif [ "$2" == "" ]; then
     echo "Missing database name in argument"
-elif [ "$3" != "" ]; then
+elif [ "$3" == "" ]; then
     echo "Missing database login"
-elif [ "$4" != "" ]; then
+elif [ "$4" == "" ]; then
     echo "Missing database password"
 fi
 
